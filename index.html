@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pida su turno en el Centro Médico Galte Laime sin hacer fila. Consulta gratuita, de lunes a viernes de 8:00 a 16:30.">
+  <meta name="theme-color" content="#0A5F5E">
+  <title>Centro Médico Galte Laime | Pida su turno</title>
+  <link rel="preload" href="fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+</head><body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="sitio">
+    <div class="sitio__barra">
+      <a class="marca" href="index.html">
+        <span class="marca__sello" aria-hidden="true">G</span>
+        <span class="marca__texto"><strong>Centro Médico Galte Laime</strong><span>Dispensario de salud público</span></span>
+      </a>
+      <a class="btn btn--linea btn--llamar" href="tel:+59322000000"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Llamar</span></a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html#turno" aria-current="page"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Pedir turno</span></a></li>
+        <li><a href="index.html#atenciones"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="1.6"/></svg><span>Atenciones</span></a></li>
+        <li><a href="index.html#antes-de-ir"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Antes de ir</span></a></li>
+        <li><a href="index.html#comunidad"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg><span>Comunidad</span></a></li>
+        <li><a href="index.html#donde-estamos"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Dónde estamos</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="turno" aria-labelledby="hero-titulo">
+      <div class="hero__texto">
+        <h1 id="hero-titulo">Pida su turno sin hacer fila</h1>
+        <p class="hero__lead">Elija la atención, el día y la hora. Le toma menos de 2 minutos y le llega por mensaje al celular.</p>
+        <p class="proximo"><span class="proximo__hora"><time datetime="10:30">10:30</time></span><span><strong>Próximo turno libre</strong><br>hoy, consulta general</span></p>
+        <a class="btn btn--maiz btn--grande hero__cta" href="pedir-turno.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Pedir turno</span></a>
+      </div>
+
+      <form class="reserva-rapida" action="pedir-turno.html" method="get" aria-labelledby="rr-titulo">
+        <h2 id="rr-titulo">Empiece aquí mismo</h2>
+        <fieldset>
+          <legend>¿Qué atención necesita?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="atencion" value="general" checked><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="1.6"/></svg>Consulta general</label>
+            <label class="chip"><input type="radio" name="atencion" value="vacunas"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18 2 4 4M15 5l4 4M17 7 7.5 16.5M9 9l6 6M4 20l3.5-3.5M11.5 6.5l6 6"/></svg>Vacunas</label>
+            <label class="chip"><input type="radio" name="atencion" value="dentista"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4 2 7 .4 2.5 1 6.5 2.6 6.5 1.8 0 1.7-5 4.4-5s2.6 5 4.4 5c1.6 0 2.2-4 2.6-6.5.5-3 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg>Dentista</label>
+            <label class="chip"><input type="radio" name="atencion" value="embarazo"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="6" r="3"/><path d="M8 21v-4a4 4 0 0 1 4-4 5 5 0 0 1 5 5v3"/><circle cx="14" cy="17" r="1.6"/></svg>Embarazo</label>
+          </div>
+        </fieldset>
+        <button class="btn btn--maiz" type="submit"><span>Ver horarios libres</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></button>
+      </form>
+    </section>
+
+    <ul class="datos-clave" aria-label="Datos importantes">
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Lunes a viernes, de <time datetime="08:00">8:00</time> a <time datetime="16:30">16:30</time></span></li>
+      <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>Consulta gratuita</span></li>
+      <li class="datos-clave__alerta"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 18v-6a5 5 0 0 1 10 0v6"/><path d="M5 18h14v3H5zM12 3v2M4.2 6.2l1.4 1.4M19.8 6.2l-1.4 1.4"/></svg><span>¿Emergencia? <a href="tel:911">Llame&nbsp;al&nbsp;911</a></span></li>
+    </ul>
+
+    <section class="seccion" id="atenciones" aria-labelledby="atenciones-titulo">
+      <div class="seccion__cabeza">
+        <h2 id="atenciones-titulo">¿Qué atención necesita?</h2>
+        <p>Seis atenciones para toda la familia. Elija una para ver sus horarios libres.</p>
+      </div>
+      <ul class="atenciones" role="list">
+          <li>
+            <article class="atencion">
+              <span class="atencion__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="1.6"/></svg></span>
+              <h3>Consulta general</h3>
+              <p>Para niños y adultos: tos, fiebre, dolores y chequeos.</p>
+              <a class="enlace-flecha" href="pedir-turno.html?atencion=general">Pedir turno<span class="sr"> para consulta general</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
+            </article>
+          </li>
+          <li>
+            <article class="atencion">
+              <span class="atencion__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m18 2 4 4M15 5l4 4M17 7 7.5 16.5M9 9l6 6M4 20l3.5-3.5M11.5 6.5l6 6"/></svg></span>
+              <h3>Vacunas</h3>
+              <p>Vacunas para bebés, niños, adultos y adultos mayores.</p>
+              <a class="enlace-flecha" href="pedir-turno.html?atencion=vacunas">Pedir turno<span class="sr"> para vacunas</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
+            </article>
+          </li>
+          <li>
+            <article class="atencion">
+              <span class="atencion__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 3c-2.5 0-4 2-4 4.5 0 3 1.5 4 2 7 .4 2.5 1 6.5 2.6 6.5 1.8 0 1.7-5 4.4-5s2.6 5 4.4 5c1.6 0 2.2-4 2.6-6.5.5-3 2-4 2-7C21 5 19.5 3 17 3c-2 0-3 1-5 1S9 3 7 3z"/></svg></span>
+              <h3>Dentista</h3>
+              <p>Limpieza, dolor de muela y cuidado de los dientes.</p>
+              <a class="enlace-flecha" href="pedir-turno.html?atencion=dentista">Pedir turno<span class="sr"> para dentista</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
+            </article>
+          </li>
+          <li>
+            <article class="atencion">
+              <span class="atencion__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="6" r="3"/><path d="M8 21v-4a4 4 0 0 1 4-4 5 5 0 0 1 5 5v3"/><circle cx="14" cy="17" r="1.6"/></svg></span>
+              <h3>Control del embarazo</h3>
+              <p>Chequeos de la mamá y el bebé durante el embarazo.</p>
+              <a class="enlace-flecha" href="pedir-turno.html?atencion=embarazo">Pedir turno<span class="sr"> para control del embarazo</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
+            </article>
+          </li>
+          <li>
+            <article class="atencion">
+              <span class="atencion__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 3h6M10 3v12a2 2 0 0 0 4 0V3"/><path d="M10 10h4"/><path d="M5 21h14"/></svg></span>
+              <h3>Exámenes de sangre y orina</h3>
+              <p>Exámenes de laboratorio que pide su médico.</p>
+              <a class="enlace-flecha" href="pedir-turno.html?atencion=examenes">Pedir turno<span class="sr"> para exámenes de sangre y orina</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
+            </article>
+          </li>
+          <li>
+            <article class="atencion">
+              <span class="atencion__ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/><path d="M8 11h2l1-2 2 4 1-2h2"/></svg></span>
+              <h3>Presión y azúcar</h3>
+              <p>Control de la presión y de la glucosa.</p>
+              <a class="enlace-flecha" href="pedir-turno.html?atencion=presion">Pedir turno<span class="sr"> para presión y azúcar</span><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m9 6 6 6-6 6"/></svg></a>
+            </article>
+          </li>
+      </ul>
+    </section>
+
+    <div class="dos-col">
+      <section class="antes" id="antes-de-ir" aria-labelledby="antes-titulo">
+        <h2 id="antes-titulo">Antes de ir</h2>
+        <ul role="list">
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Lleve su <strong>cédula</strong> y el <strong>carnet de salud</strong>.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span>Llegue <strong>15 minutos antes</strong> de su hora.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="m8 12 3 3 5-6"/></svg><span>La consulta es <strong>gratuita</strong>. Algunos exámenes especiales pueden tener un costo bajo; en recepción le avisan antes.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>¿No puede ir? <strong>Cambie o cancele</strong> su turno hasta 4 horas antes, para que otra persona use ese horario.</span></li>
+          <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 18v-6a5 5 0 0 1 10 0v6"/><path d="M5 18h14v3H5zM12 3v2M4.2 6.2l1.4 1.4M19.8 6.2l-1.4 1.4"/></svg><span>Aquí <strong>no atendemos emergencias</strong>. Para una emergencia llame al <a href="tel:911">911</a>.</span></li>
+        </ul>
+      </section>
+
+      <section class="comunidad" id="comunidad" aria-labelledby="comunidad-titulo">
+        <h2 id="comunidad-titulo">En la comunidad</h2>
+        <article class="video">
+          <a class="video__enlace" href="#comunidad">
+            <span class="video__play"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <span class="video__texto"><strong>Así se pide un turno en 1 minuto</strong><span>Video de 60 segundos, con subtítulos</span></span>
+          </a>
+        </article>
+        <h3 class="comunidad__sub">Próximas actividades</h3>
+        <ul class="eventos" role="list">
+          <li>
+            <article class="evento">
+              <time class="evento__fecha" datetime="2026-11-28"><span>nov</span>28</time>
+              <div><h4>Vacunación casa por casa</h4><p>Barrio Galte Laime, de 8:00 a 12:00</p></div>
+            </article>
+          </li>
+          <li>
+            <article class="evento">
+              <time class="evento__fecha" datetime="2026-12-05"><span>dic</span>5</time>
+              <div><h4>Charla: alimentación del bebé</h4><p>Casa comunal, 10:00</p></div>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="donde" id="donde-estamos" aria-labelledby="donde-titulo">
+      <div>
+        <h2 id="donde-titulo">Dónde estamos</h2>
+        <p>Av. Salud Pública N.º 1234, Barrio Galte Laime, <strong>frente a la Plaza Central</strong>.</p>
+      </div>
+      <a class="btn btn--linea" href="https://www.openstreetmap.org/search?query=Plaza%20Central" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Ver cómo llegar</span></a>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__grid">
+      <section aria-labelledby="pie-dir">
+        <h2 id="pie-dir">Dirección</h2>
+        <address>Av. Salud Pública N.º 1234, Barrio Galte Laime<br>Frente a la Plaza Central</address>
+      </section>
+      <section aria-labelledby="pie-tel">
+        <h2 id="pie-tel">Teléfonos</h2>
+        <p><a href="tel:+59322000000">(02)&nbsp;200&#8209;0000</a><br><a href="tel:+593987654321">098&nbsp;765&nbsp;4321</a></p>
+      </section>
+      <section aria-labelledby="pie-hor">
+        <h2 id="pie-hor">Horario</h2>
+        <p>Lunes a viernes<br><time datetime="08:00">8:00</time> a <time datetime="16:30">16:30</time></p>
+      </section>
+    </div>
+    <p class="pie__legal">© 2026 Centro Médico Galte Laime · Dispensario de Salud Público. Elaborado por Nicholas Ortiz, Alfredo Navas y Christian Pagllacho.</p>
+  </footer>
+
+  <nav class="barra-accion" aria-label="Acciones rápidas">
+    <a class="btn btn--maiz" href="pedir-turno.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Pedir turno</span></a>
+    <a class="btn btn--verde" href="tel:+59322000000"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Llamar</span></a>
+  </nav>
+</body>
+</html>

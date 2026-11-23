@@ -1,0 +1,91 @@
+{
+ "movil/index.html": {
+  "axe_violations": [],
+  "axe_passes": 38,
+  "axe_incomplete": [
+   "color-contrast"
+  ],
+  "targets_total": 22,
+  "targets_under_48": [],
+  "tab_stops": 23,
+  "focus_under_3px": []
+ },
+ "movil/pedir-turno.html": {
+  "axe_violations": [],
+  "axe_passes": 40,
+  "axe_incomplete": [
+   "color-contrast"
+  ],
+  "targets_total": 35,
+  "targets_under_48": [],
+  "tab_stops": 16,
+  "focus_under_3px": []
+ },
+ "movil/datos.html": {
+  "axe_violations": [],
+  "axe_passes": 41,
+  "axe_incomplete": [
+   "color-contrast"
+  ],
+  "targets_total": 16,
+  "targets_under_48": [],
+  "tab_stops": 17,
+  "focus_under_3px": []
+ },
+ "movil/turno-listo.html": {
+  "axe_violations": [],
+  "axe_passes": 40,
+  "axe_incomplete": [
+   "color-contrast"
+  ],
+  "targets_total": 12,
+  "targets_under_48": [],
+  "tab_stops": 13,
+  "focus_under_3px": []
+ },
+ "escritorio/index.html": {
+  "axe_violations": [],
+  "axe_passes": 42,
+  "axe_incomplete": [
+   "color-contrast"
+  ],
+  "targets_total": 24,
+  "targets_under_48": [],
+  "tab_stops": 22,
+  "focus_under_3px": []
+ },
+ "escritorio/pedir-turno.html": {
+  "axe_violations": [],
+  "axe_passes": 39,
+  "axe_incomplete": [],
+  "targets_total": 35,
+  "targets_under_48": [],
+  "tab_stops": 16,
+  "focus_under_3px": []
+ },
+ "escritorio/datos.html": {
+  "axe_violations": [],
+  "axe_passes": 40,
+  "axe_incomplete": [],
+  "targets_total": 16,
+  "targets_under_48": [],
+  "tab_stops": 17,
+  "focus_under_3px": []
+ },
+ "escritorio/turno-listo.html": {
+  "axe_violations": [],
+  "axe_passes": 39,
+  "axe_incomplete": [
+   "color-contrast"
+  ],
+  "targets_total": 12,
+  "targets_under_48": [],
+  "tab_stops": 13,
+  "focus_under_3px": []
+ },
+ "estado_error": {
+  "cedula_error_visible": "flex",
+  "nombre_error_visible": "none"
+ },
+ "resumen_has": "Atención Dentista Día y hora Martes 17, 10:30"
+}

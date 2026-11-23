@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Su turno está reservado. Revise el día, la hora y qué debe llevar.">
+  <meta name="theme-color" content="#0A5F5E">
+  <title>Turno reservado | Centro Médico Galte Laime</title>
+  <link rel="preload" href="fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/estilos.css">
+</head><body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <header class="sitio">
+    <div class="sitio__barra">
+      <a class="marca" href="index.html">
+        <span class="marca__sello" aria-hidden="true">G</span>
+        <span class="marca__texto"><strong>Centro Médico Galte Laime</strong><span>Dispensario de salud público</span></span>
+      </a>
+      <a class="btn btn--linea btn--llamar" href="tel:+59322000000"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Llamar</span></a>
+    </div>
+    <nav class="menu" aria-label="Menú principal">
+      <ul>
+        <li><a href="index.html#turno" aria-current="page"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Pedir turno</span></a></li>
+        <li><a href="index.html#atenciones"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="1.6"/></svg><span>Atenciones</span></a></li>
+        <li><a href="index.html#antes-de-ir"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Antes de ir</span></a></li>
+        <li><a href="index.html#comunidad"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg><span>Comunidad</span></a></li>
+        <li><a href="index.html#donde-estamos"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span>Dónde estamos</span></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="contenido">
+    <section class="confirmacion" aria-labelledby="conf-titulo">
+      <ol class="progreso" aria-label="Pasos para pedir turno"><li class="hecho"><span class="progreso__num" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></span><span class="progreso__txt"><span class="sr">(completado) </span>Atención, día y hora</span></li><li class="hecho"><span class="progreso__num" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></span><span class="progreso__txt"><span class="sr">(completado) </span>Sus datos</span></li><li class="actual" aria-current="step"><span class="progreso__num" aria-hidden="true">3</span><span class="progreso__txt">Turno listo</span></li></ol>
+      <h1 id="conf-titulo" class="confirmacion__titulo"><span class="confirmacion__ok"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></span>Turno reservado</h1>
+      <p class="confirmacion__lead">Le enviamos este turno a su celular terminado en 321.</p>
+
+      <article class="ticket" aria-labelledby="ticket-codigo">
+        <div class="ticket__talon">
+          <p class="ticket__etq">Su número de turno</p>
+          <p class="ticket__codigo" id="ticket-codigo">GL-0241</p>
+          <p class="ticket__nota">Muestre este número en recepción.</p>
+        </div>
+        <dl class="ticket__datos">
+          <div><dt>Día</dt><dd class="ticket__grande"><time datetime="2026-11-17">Martes 17</time></dd></div>
+          <div><dt>Hora</dt><dd class="ticket__grande"><time datetime="09:30">9:30</time></dd></div>
+          <div><dt>Llegue a las</dt><dd class="ticket__grande"><time datetime="09:15">9:15</time></dd></div>
+          <div class="ticket__dos"><dt>Atención</dt><dd>Consulta general</dd></div>
+          <div><dt>Paciente</dt><dd>Mateo Jijón Ortega</dd></div>
+          <div class="ticket__ancho"><dt>Lleve</dt><dd>Cédula y carnet de salud</dd></div>
+          <div class="ticket__ancho"><dt>Dónde</dt><dd>Av. Salud Pública N.º 1234, frente a la Plaza Central</dd></div>
+        </dl>
+      </article>
+
+      <div class="confirmacion__acciones">
+        <a class="btn btn--maiz" href="https://wa.me/?text=Mi%20turno%20en%20el%20Centro%20M%C3%A9dico%20Galte%20Laime%3A%20GL-0241%2C%20martes%2017%20a%20las%209%3A30." rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 1a4 4 0 0 1-2-2l1-1-1-2z"/></svg><span>Enviar por WhatsApp</span></a>
+        <a class="btn btn--blanco" href="tel:+59322000000"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Cambiar o cancelar por teléfono</span></a>
+      </div>
+      <p class="confirmacion__tip"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M7 9V3h10v6M7 17H4v-6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v6h-3"/><rect x="7" y="14" width="10" height="7"/></svg><span>Para guardarlo, tome una captura de pantalla o use <strong>Imprimir</strong> en su navegador: se imprime solo el ticket.</span></p>
+    </section>
+
+    <section class="despues" aria-labelledby="despues-titulo">
+      <h2 id="despues-titulo" class="sr">Lo que sigue</h2>
+      <ul role="list">
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><h3>Un día antes</h3><p>Le recordaremos su turno con un mensaje.</p></div></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><div><h3>¿No puede ir?</h3><p>Cambie o cancele hasta 4 horas antes para liberar el cupo.</p></div></li>
+        <li><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><div><h3>¿Cómo llegar?</h3><p>Frente a la Plaza Central. <a href="index.html#donde-estamos">Ver la dirección</a></p></div></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="pie__grid">
+      <section aria-labelledby="pie-dir">
+        <h2 id="pie-dir">Dirección</h2>
+        <address>Av. Salud Pública N.º 1234, Barrio Galte Laime<br>Frente a la Plaza Central</address>
+      </section>
+      <section aria-labelledby="pie-tel">
+        <h2 id="pie-tel">Teléfonos</h2>
+        <p><a href="tel:+59322000000">(02)&nbsp;200&#8209;0000</a><br><a href="tel:+593987654321">098&nbsp;765&nbsp;4321</a></p>
+      </section>
+      <section aria-labelledby="pie-hor">
+        <h2 id="pie-hor">Horario</h2>
+        <p>Lunes a viernes<br><time datetime="08:00">8:00</time> a <time datetime="16:30">16:30</time></p>
+      </section>
+    </div>
+    <p class="pie__legal">© 2026 Centro Médico Galte Laime · Dispensario de Salud Público. Elaborado por Nicholas Ortiz, Alfredo Navas y Christian Pagllacho.</p>
+  </footer>
+</body>
+</html>
