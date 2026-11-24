@@ -8,20 +8,21 @@
   <title>Pedir turno: paso 2 de 2 | Centro Médico Galte Laime</title>
   <link rel="preload" href="fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/estilos.css">
-</head><body>
+</head>
+<body class="pag-flujo">
   <a class="saltar" href="#contenido">Saltar al contenido</a>
 
   <header class="sitio">
     <div class="sitio__barra">
       <a class="marca" href="index.html">
         <span class="marca__sello" aria-hidden="true">G</span>
-        <span class="marca__texto"><strong>Centro Médico Galte Laime</strong><span>Dispensario de salud público</span></span>
+        <span class="marca__texto"><strong><span class="solo-amplio">Centro Médico </span>Galte Laime</strong><span>Dispensario <span class="solo-amplio">de salud </span>público</span></span>
       </a>
       <a class="btn btn--linea btn--llamar" href="tel:+59322000000"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>Llamar</span></a>
     </div>
     <nav class="menu" aria-label="Menú principal">
       <ul>
-        <li><a href="index.html#turno" aria-current="page"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Pedir turno</span></a></li>
+        <li><a href="index.html#inicio" aria-current="page"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Pedir turno</span></a></li>
         <li><a href="index.html#atenciones"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 3v6a5 5 0 0 0 10 0V3"/><path d="M11 14v2a5 5 0 0 0 10 0v-1"/><circle cx="21" cy="13" r="1.6"/></svg><span>Atenciones</span></a></li>
         <li><a href="index.html#antes-de-ir"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span>Antes de ir</span></a></li>
         <li><a href="index.html#comunidad"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0 1 12 0"/><circle cx="17" cy="9" r="2.4"/><path d="M15.5 14.2A5 5 0 0 1 21 19"/></svg><span>Comunidad</span></a></li>
@@ -31,74 +32,56 @@
   </header>
 
   <main id="contenido" class="flujo">
-    <div class="flujo__cabeza">
-      <a class="volver" href="pedir-turno.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg><span>Volver al paso 1</span></a>
+    <div class="paso-top">
+      <a class="volver" href="pedir-turno.html"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m15 6-6 6 6 6"/></svg><span>Paso 1</span></a>
       <ol class="progreso" aria-label="Pasos para pedir turno"><li class="hecho"><span class="progreso__num" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg></span><span class="progreso__txt"><span class="sr">(completado) </span>Atención, día y hora</span></li><li class="actual" aria-current="step"><span class="progreso__num" aria-hidden="true">2</span><span class="progreso__txt">Sus datos</span></li><li class=""><span class="progreso__num" aria-hidden="true">3</span><span class="progreso__txt">Turno listo</span></li></ol>
+      <p class="paso-top__txt" aria-hidden="true">Paso 2 de 2</p>
     </div>
-
     <div class="flujo__grid">
       <div class="flujo__principal">
         <h1>Sus datos</h1>
-        <p class="flujo__ayuda">Paso 2 de 2. Solo necesitamos 3 datos. Todos son obligatorios.</p>
+        <div class="resumen-mini"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><p><strong>Martes 17, 9:30</strong><span>Consulta general</span></p><a href="pedir-turno.html">Cambiar<span class="sr"> atención, día u hora</span></a></div>
 
-        <form class="panel form-datos" action="turno-listo.html" method="get">
-          <div class="campo campo--ancho">
-            <label for="nombre">Nombre completo del paciente</label>
-            <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="5" aria-describedby="nombre-ayuda">
-            <p class="campo__ayuda" id="nombre-ayuda">Ejemplo: Mateo Jijón Ortega</p>
-            <p class="campo__error" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>Escriba el nombre y el apellido del paciente.</span></p>
+        <form class="form-datos" action="turno-listo.html" method="get" id="form-datos">
+          <div class="panel campos">
+            <div class="campo campo--ancho">
+              <label for="nombre">Nombre completo del paciente</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="5">
+              <p class="campo__error" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>Escriba el nombre y el apellido del paciente.</span></p>
+            </div>
+            <div class="campo">
+              <label for="cedula">Número de cédula</label>
+              <input id="cedula" name="cedula" type="text" inputmode="numeric" autocomplete="off" required pattern="[0-9]{10}" maxlength="10" aria-describedby="cedula-ayuda" title="La cédula tiene 10 números, sin guiones.">
+              <p class="campo__ayuda" id="cedula-ayuda">Son 10 números, sin guiones.</p>
+              <p class="campo__error" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>Faltan números. La cédula tiene 10 números.</span></p>
+            </div>
+            <div class="campo">
+              <label for="celular">Celular para avisarle</label>
+              <input id="celular" name="celular" type="tel" inputmode="numeric" autocomplete="tel" required pattern="09[0-9]{8}" maxlength="10" aria-describedby="celular-ayuda" title="El celular empieza con 09 y tiene 10 números.">
+              <p class="campo__ayuda" id="celular-ayuda">Empieza con 09. Le enviaremos su turno por mensaje.</p>
+              <p class="campo__error" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>El celular empieza con 09 y tiene 10 números.</span></p>
+            </div>
+            <p class="privacidad campo--ancho"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Sus datos solo los usa el dispensario.</span></p>
           </div>
-
-          <div class="campo">
-            <label for="cedula">Número de cédula</label>
-            <input id="cedula" name="cedula" type="text" inputmode="numeric" autocomplete="off" required pattern="[0-9]{10}" maxlength="10" aria-describedby="cedula-ayuda" title="La cédula tiene 10 números, sin guiones.">
-            <p class="campo__ayuda" id="cedula-ayuda">Son 10 números, sin guiones.</p>
-            <p class="campo__error" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>Faltan números. La cédula tiene 10 números.</span></p>
-          </div>
-
-          <div class="campo">
-            <label for="celular">Celular para avisarle</label>
-            <input id="celular" name="celular" type="tel" inputmode="numeric" autocomplete="tel" required pattern="09[0-9]{8}" maxlength="10" aria-describedby="celular-ayuda" title="El celular empieza con 09 y tiene 10 números.">
-            <p class="campo__ayuda" id="celular-ayuda">Empieza con 09. Le enviaremos su turno por mensaje.</p>
-            <p class="campo__error" aria-hidden="true"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg><span>El celular empieza con 09 y tiene 10 números.</span></p>
-          </div>
-
-          <p class="privacidad campo--ancho"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><span>Sus datos solo los usa el dispensario para su turno.</span></p>
-
-          <div class="flujo__acciones campo--ancho">
+          <div class="flujo__acciones">
+            <p class="solo-amplio">Paso 2 de 2 · Solo 3 datos</p>
             <button class="btn btn--maiz btn--grande" type="submit"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 12 5 5 9-10"/></svg><span>Reservar mi turno</span></button>
           </div>
         </form>
       </div>
 
-      <aside class="resumen" aria-labelledby="resumen-titulo">
-        <h2 id="resumen-titulo">Su turno</h2>
-        <dl>
-          <div><dt>Atención</dt><dd>Consulta general</dd></div>
-          <div><dt>Día y hora</dt><dd>Martes 17, 9:30</dd></div>
-        </dl>
-        <a class="resumen__cambiar" href="pedir-turno.html">Cambiar atención, día u hora</a>
-        <p class="resumen__nota"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>¿Prefiere llamar? <a href="tel:+59322000000">(02)&nbsp;200&#8209;0000</a></span></p>
+      <aside class="lado" aria-labelledby="resumen-titulo">
+        <div class="resumen">
+          <h2 id="resumen-titulo">Su turno</h2>
+          <dl>
+            <div><dt>Atención</dt><dd>Consulta general</dd></div>
+            <div><dt>Día y hora</dt><dd>Martes 17, 9:30</dd></div>
+            <div><dt>Paciente</dt><dd class="resumen__vacio">Escriba sus datos</dd></div>
+          </dl>
+        </div>
+        <p class="ayuda-tel"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L14 12l5 2v3a2 2 0 0 1-2 2A15 15 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>¿Prefiere hacerlo por teléfono? Llame al <a href="tel:+59322000000">(02)&nbsp;200&#8209;0000</a></span></p>
       </aside>
     </div>
   </main>
-
-  <footer class="pie">
-    <div class="pie__grid">
-      <section aria-labelledby="pie-dir">
-        <h2 id="pie-dir">Dirección</h2>
-        <address>Av. Salud Pública N.º 1234, Barrio Galte Laime<br>Frente a la Plaza Central</address>
-      </section>
-      <section aria-labelledby="pie-tel">
-        <h2 id="pie-tel">Teléfonos</h2>
-        <p><a href="tel:+59322000000">(02)&nbsp;200&#8209;0000</a><br><a href="tel:+593987654321">098&nbsp;765&nbsp;4321</a></p>
-      </section>
-      <section aria-labelledby="pie-hor">
-        <h2 id="pie-hor">Horario</h2>
-        <p>Lunes a viernes<br><time datetime="08:00">8:00</time> a <time datetime="16:30">16:30</time></p>
-      </section>
-    </div>
-    <p class="pie__legal">© 2026 Centro Médico Galte Laime · Dispensario de Salud Público. Elaborado por Nicholas Ortiz, Alfredo Navas y Christian Pagllacho.</p>
-  </footer>
 </body>
 </html>

@@ -10,13 +10,26 @@ No necesita servidor ni instalación.
 
 ## Estructura
 ```
-index.html          Inicio: hero + reserva rápida, datos clave, Atenciones, Antes de ir, Comunidad, Dónde estamos
+index.html          Inicio: hero con reserva (escritorio), datos clave, Atenciones, Antes de ir, Comunidad; Dónde estamos en el pie
 pedir-turno.html    Paso 1 de 2: atención, día y hora (formulario GET → datos.html)
 datos.html          Paso 2 de 2: nombre, cédula y celular (formulario → turno-listo.html)
 turno-listo.html    Confirmación: ticket de turno (se imprime solo el ticket)
 css/estilos.css     Un único archivo CSS organizado en @layer
 fonts/              Atkinson Hyperlegible (texto) y Bricolage Grotesque (títulos), alojadas localmente
 ```
+
+## Fidelidad al mockup
+El sitio reproduce los 8 mockups aprobados: 4 de celular y 4 de escritorio. Solo se apartan del mockup en lo que exige trabajar sin JavaScript o la accesibilidad:
+
+- **Menú en el celular:** fila deslizable con las 5 categorías. Sin ella no se llega a todas las secciones.
+- **Botón "Guardar en mi celular":** se reemplaza por un aviso para tomar una captura o imprimir (al imprimir sale solo el ticket). Guardar un archivo necesita JavaScript.
+- **QR del ticket:** se quitó porque era un dibujo decorativo.
+- **"Cambiar o cancelar":** abre una llamada, porque no hay servidor para hacerlo en línea.
+- **Formulario del paso 2:** los campos empiezan vacíos y el error aparece después de escribir. En el mockup los datos de ejemplo estaban ya escritos.
+- **Una sola página para ambas versiones:** el celular muestra las mismas 6 atenciones, 5 días y 12 horas que el escritorio.
+- **Comunidad y pie en el celular:** el inicio en celular incluye "Comunidad" y el pie, porque el menú enlaza a esas secciones.
+
+`boceto_cuaderno.png` muestra la distribución final de las cajas con sus etiquetas HTML5.
 
 ## Menú = categorías del Card Sorting
 Pedir turno · Atenciones · Antes de ir · Comunidad · Dónde estamos
